@@ -1,0 +1,31 @@
+
+.song{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-white);
+    cursor: pointer;
+}
+.song img{
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+}
+.songInfo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.songInfo span{
+    flex: 1;
+}
+.songInfo :first-child{
+    text-align: left;
+}
+.songInfo :last-child{
+    text-align: right;
+}

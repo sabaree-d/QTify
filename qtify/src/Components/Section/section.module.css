@@ -1,0 +1,105 @@
+
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 1rem 2rem;
+    position: relative;
+    /* padding: 1rem; */
+    transition: all 250ms;
+    /* background-color: #ffffff18; */
+    border-bottom: 1px solid var(--color-primary);
+    /* z-index: 1; */
+}
+.sectionHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.stickyTop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 2rem;
+    z-index: 10;
+    background-color: var(--color-black);
+    height: 74px;
+}
+.sectionName{
+    text-transform: capitalize;
+}
+.collpaseButt{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+.sectionBody{
+    margin-top: 1rem;
+}
+.cardGrid{
+    /* margin-top: 24px; */
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.tabs{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.tab, .tabSelected{
+    color: #fff;
+    font-weight: 600;
+    padding: 0 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.tab{
+    border-bottom: 4px solid var(--color-black);
+}
+.tabSelected{
+    border-bottom: 4px solid var(--color-primary);
+}
+
+/* screens below 1300px */
+@media screen and (max-width: 1300px){
+    .cardGrid{
+        grid-column-gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+/* screens below 1200px */
+@media screen and (max-width: 1200px){
+    .cardGrid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+/* screens below 950px */
+@media screen and (max-width: 950px){
+    .cardGrid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* screens below 950px */
+@media screen and (max-width: 750px){
+    .cardGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* screens below 950px */
+@media screen and (max-width: 550px){
+    .cardGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* screens below 400px */
+@media screen and (max-width: 400px){
+    .section{
+        padding: 1rem;
+    }
+}

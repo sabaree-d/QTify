@@ -1,0 +1,46 @@
+
+.FeedbackFormContainer{
+    position: absolute;
+    top: calc(74px + 1rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-black);
+    width: 526px;
+    max-width: 90%;
+}
+.FeedbackFormContainerHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.FeedbackFormContainerHead img{
+    cursor: pointer;
+}
+.FeedbackFormContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+.FeedbackFormContainer input{
+    outline: none;
+    border: 1px solid var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+    width: 80%;
+}
+.FeedbackFormContainer button{
+    color: #fff;
+    margin-top: 0.5rem;
+    background-color: var(--color-primary);
+}
+

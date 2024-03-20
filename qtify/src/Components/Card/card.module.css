@@ -1,0 +1,67 @@
+
+.card{
+    background-color: #121212;
+    /* width: 159px; */
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    animation: slideUp 500ms forwards;
+    cursor: pointer;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 205px;
+    transition: 250ms;
+}
+.cardImg{
+    background-size: cover !important;
+}
+.cardImgWrapper{
+    height: 83%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.card:hover .cardImg{
+    transform: scale(110%);
+}
+/* background: url(https://s3-alpha-sig.figma.com/img/a6c9/98a4/568f8125b3283967b947514af8b295f7?Expires=1701043200&Signature=XUsR8NIp1YslsQioKT1T6hDMyIPi4zNC8iJHWmdJU4mBuRmEbAHa40P0xDQjuX8E-hiEgaQscvb0fI2sLpFDfpX6mH20o-8Nkj-ZC7gliPPb9tg6O79KncpKTh-medStFrEhtYePIilYjwXZTM9H-~gegVv10WA303J0068Sxz6XFEBeVl-aFLxWVYchZXYL4FBgrnzynThqhLErEV6IFc3ArSx0-0TcEoW1conCM1SnLaWD12aMzSNanQDQPzsdlGu9RSefgqWqyKnR1L-WZRUECUxRVOmH50dIgA8Wp6LugAFnJ7bQyx9eVQzFLgvauxOx7Xxml8wvvdztk-uVqQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 50% / cover no-repeat; */
+.chip{
+    flex: 1;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #fff;
+    font-size: 0.725rem;
+    margin: 8px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* total: 205
+    img:170, 82.92
+    bottom: 35, 17.07
+ */
+
+@keyframes slideUp {
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

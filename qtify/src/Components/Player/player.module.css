@@ -1,0 +1,64 @@
+
+.playerContainer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #121212e7;
+    box-shadow: 0px -2px 6px 0px rgba(255, 255, 255, 0.35);
+    padding: 0.5rem 1rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+.songData{
+    display: flex;
+    align-items: center;
+}
+.songData img{
+    width: 50px;
+    background-color: var(--color-primary);
+}
+.playerTexts{
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.albumName{
+    font-size: 0.8rem;
+}
+.playerControlsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.playerControlsDiv img{
+    width: 40px;
+}
+.sliderContainer{
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px){
+    .playerContainer{
+        padding: 0.5rem;
+    }
+    .playerControlsDiv{
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .playerControlsDiv img{
+        width: 30px;
+        margin-left: 1rem;
+    }
+    .sliderContainer{
+        flex: 1;
+    }
+}

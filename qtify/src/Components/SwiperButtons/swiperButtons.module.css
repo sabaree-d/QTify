@@ -1,0 +1,59 @@
+
+.swiperButtonPrev, .swiperButtonNext{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    /* width: 32px; */
+    aspect-ratio: 1;
+    padding: 0;
+    opacity: 0;
+    animation: appearDelay 500ms 1.5s forwards;
+}
+
+.swiperButtonPrev{
+    left: 4rem;
+    transform: translateX(-50%);
+}
+.swiperButtonNext{
+    right: 4rem;
+    transform: translateX(50%);
+}
+
+.swiperButtonPrev img, .swiperButtonNext img{
+    width: 100%;
+}
+
+
+/* screens below 500px */
+@media screen and (max-width: 500px){
+    .swiperButtonPrev{
+        left: 2rem;
+    }
+    .swiperButtonNext{
+        right: 2rem;
+    }
+}
+/* screens below 400px */
+@media screen and (max-width: 400px){
+    .swiperButtonPrev{
+        left: 1rem;
+    }
+    .swiperButtonNext{
+        right: 1rem;
+    }
+}
+
+@keyframes appearDelay {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

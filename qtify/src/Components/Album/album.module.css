@@ -1,0 +1,174 @@
+
+.album{
+    position: absolute;
+    background-color: var(--color-black);
+    top: 74px;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+    z-index: 5;
+    padding: 2rem calc(10%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transform: translateY(100%);
+    animation: albumAppear 500ms forwards;
+}
+.albumHead{
+    /* height: 50%; */
+}
+.closeAlbumButton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.closeAlbumButton span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.albumHeadBody{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1009px;
+    /* max-height: 45vh; */
+    /* background-color: rgba(255, 0, 0, 0.11); */
+}
+.backgroundForAlbumTitle{
+    /* width: 200px;
+    height: 250px; */
+    max-height: 45vh;
+    min-height: 30vh;
+    aspect-ratio: 0.87;
+    border-radius: 10px;
+    
+    background-size: cover;
+    background-position: center;
+}
+.albumInfo{
+    text-align: left;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: lighter;
+}
+.albumTitle{
+    font-size: 2rem;
+}
+.albumDesc, .albumYear, .albumNumbers{
+    /* font-size: 20px; */
+    margin: 0.25rem 0;
+}
+.albumNumbers{
+    display: flex;
+    align-items: center;
+}
+.albumNumbers img{
+    margin: 0 0.5rem;
+}
+.albumButtons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0.25rem;
+}
+.albumButtons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    border: 1px solid var(--color-primary);
+    background-color: inherit;
+}
+.albumButtons :first-child{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.albumButtons :nth-child(2) :first-child{
+    background-color: inherit;
+    border-radius: 0;
+}
+.albumButtons img{
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    margin-right: 0.25rem;
+}
+.albumBody{
+    /* overflow-y: scroll; */
+    /* background-color: red; */
+}
+.tableHead{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tableHeadArtist{
+    transform: translateX(50px);
+}
+.contentAppearAnimation{
+    animation: albumContentAppear 500ms 500ms forwards;
+    transform: translateY(20%);
+    opacity: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .album{
+        padding: 2rem 1rem;
+    }
+    .backgroundForAlbumTitle{
+        min-width: 200px;
+    }
+    .albumHeadBody{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .albumInfo{
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    .albumTitle{
+        font-size: 1.5rem;
+    }
+    .albumDesc, .albumYear, .albumNumbers{
+        font-size: 0.9rem;
+    }
+    .albumButtons{
+        font-size: 0.9rem;
+    }
+    .albumButtons img{
+        max-height: 1rem;
+        max-width: 1rem;
+        margin-right: 0.25rem;
+    }
+}
+
+@keyframes albumAppear {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+@keyframes albumContentAppear {
+    from{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

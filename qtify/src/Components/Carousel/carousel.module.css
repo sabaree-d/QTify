@@ -1,0 +1,25 @@
+
+.swiperContainer {
+    width: 100%;
+    /* height: 300px; */
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(59, 63, 63); */
+    position: static;
+}
+
+.swiper{
+  position: static !important;
+}
+
+.swiperEdit{
+  display: flex;
+  justify-content: space-between;
+}
+/* screens below 500px */
+@media screen and (max-width: 500px){
+  .swiperContainer{
+      padding: 0rem;
+  }
+}
