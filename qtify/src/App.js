@@ -1,8 +1,8 @@
 //components
 import Card from "./components/Card/Card";
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
-import Section from "./components/Section/Section";
+import Hero from "./component/Hero/Hero";
+import Navbar from "./component/Navbar/Navbar";
+import Section from "./component/Section/Section";
 //dependencies
 import axios from "axios";
 //contexts
@@ -10,10 +10,10 @@ import { AlbumContext } from "./Contexts/albumContext";
 
 //styles
 import "./App.css";
-import FAQ from "./components/FAQ/FAQ";
+import FAQ from "./component/FAQ/FAQ";
 import Album from "./components/Album/Album";
 import { useEffect, useState } from "react";
-import Player from "./components/Player/Player";
+import Player from "./component/Player/Player";
 
 function App() {
   //states
