@@ -11,7 +11,7 @@ import { AlbumContext } from "./Contexts/albumContext";
 //styles
 import "./App.css";
 import FAQ from "./component/FAQ/FAQ";
-import Album from "./components/Album/Album";
+import Album from "./component/Album/Album";
 import { useEffect, useState } from "react";
 import Player from "./component/Player/Player";
 
