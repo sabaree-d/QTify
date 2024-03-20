@@ -1,5 +1,5 @@
 //components
-import Card from "./components/Card/Card";
+import Card from "./component/Card/Card";
 import Hero from "./component/Hero/Hero";
 import Navbar from "./component/Navbar/Navbar";
 import Section from "./component/Section/Section";
